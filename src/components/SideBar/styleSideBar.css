@@ -1,0 +1,80 @@
+.SideBar {
+  display: flex;
+  width: 18%;
+  height: 100vh;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: default;
+  user-select: none;
+  border-right: solid 1px #e5eaef;
+}
+
+.logo {
+  display: flex;
+  margin-top: 7%;
+  margin-left: 11%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo img {
+  padding-right: 1%;
+}
+
+.logo span {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+li {
+  list-style-type: none;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+img {
+  padding-right: 8%;
+}
+
+.mm:hover {
+  border: 0px;
+  border-radius: 8px;
+  background-color: #5d88ffcd;
+  color: white;
+}
+
+.navbar1 {
+  display: flex;
+  gap: 85%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  width: auto;
+  margin-left: 18%;
+  cursor: default;
+  user-select: none;
+}
+
+.leftnav1 {
+  display: flex;
+  flex-direction: row;
+  gap: 80%;
+}
+
+.rightnav1 {
+  display: flex;
+  flex-direction: row;
+  gap: 80%;
+  align-items: center;
+}
+
+.lang {
+  display: flex;
+  flex-direction: row;
+}
+

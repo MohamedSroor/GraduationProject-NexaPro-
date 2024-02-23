@@ -3,19 +3,44 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.11.1",
+    "@cometchat-pro/chat": "^3.0.13",
+    "@cometchat-pro/react-ui-kit": "^3.0.12-pluto.beta.2",
+    "@cometchat/chat-uikit-react": "^4.2.3",
+    "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-regular-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@headlessui/react": "^1.7.18",
+    "@headlessui/tailwindcss": "^0.2.0",
+    "@material-tailwind/react": "^2.1.9",
     "@mui/icons-material": "^5.14.19",
-    "@mui/material": "^5.14.19",
+    "@mui/material": "^5.15.10",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.16",
+    "@mui/x-charts": "^6.19.4",
+    "@mui/x-data-grid": "^6.19.4",
+    "@mui/x-date-pickers": "^6.19.4",
+    "@remixicon/react": "^4.1.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@tremor/react": "^3.14.0",
+    "bizcharts": "^4.1.23",
+    "dayjs": "^1.11.10",
     "framer-motion": "^10.16.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-modal": "^3.16.1",
     "react-router-dom": "^6.20.0",
     "react-scripts": "5.0.1",
-    "styled-components": "^6.1.1",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.8",
+    "uuid": "^9.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -43,6 +68,8 @@
     ]
   },
   "devDependencies": {
-    "prettier": "3.1.0"
+    "@tailwindcss/forms": "^0.5.7",
+    "prettier": "3.1.0",
+    "tailwindcss": "^3.4.1"
   }
 }

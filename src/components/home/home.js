@@ -1,24 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./style.css";
+import { NavLink } from "react-router-dom";
+import "../style.css";
 import team from "../Icons/Home/creative-team.gif";
-
 
 function home() {
   return (
     <div className="home">
       <div className="inside">
         <div className="navbar">
-          <h3>
-            Nexa<span>Pro</span>
-          </h3>
+          <img src={require("../Icons/Logo1.png")} width={"50px"} />
           <ul>
-            <li>Why us</li>
+            <li onClick={scrollToFunction}>Why us</li>
             <li>Our team</li>
             <li>About us</li>
           </ul>
           <div className="button1">
-            <button>Get Started &#8594;</button>
+            <NavLink to="/Signup">
+              <button>Get Started &#8594;</button>
+            </NavLink>
           </div>
         </div>
         <content className="content">
@@ -62,6 +61,7 @@ function home() {
           <img
             src={require("../Icons/Home/Project.png")}
             style={{ width: "519px", height: "405px" }}
+            id="scrollToElement"
           />
           <div className="title">
             <h1 style={{ fontSize: "40px" }}>Customized solutions for teams</h1>
@@ -172,28 +172,41 @@ function home() {
           </div>
           <div className="bottomFooter">
             <p>Copyright &#169; 2023 NexaPro</p>
-            <h3>
-              Nexa<span>Pro</span>
-            </h3>
+            <img src={require("../Icons/Logo1.png")} width={"50px"} />
             <div className="social">
-              <Link to={"#"}>
+              <NavLink to={"#"}>
                 <img src={require("../Icons/Home/facebook.png")} />
-              </Link>
-              <Link to={"#"}>
+              </NavLink>
+              <NavLink to={"#"}>
                 <img src={require("../Icons/Home/Instagram.png")} />
-              </Link>
-              <Link to={"#"}>
+              </NavLink>
+              <NavLink to={"#"}>
                 <img src={require("../Icons/Home/LinkedIn.png")} />
-              </Link>
-              <Link to={"#"}>
+              </NavLink>
+              <NavLink to={"#"}>
                 <img src={require("../Icons/Home/TwitterX.png")} />
-              </Link>
+              </NavLink>
             </div>
           </div>
         </footer>
       </div>
     </div>
   );
+}
+
+function scrollToFunction() {
+  var element = document.getElementById("scrollToElement");
+  var scrollToTop = window.pageYOffset + element.getBoundingClientRect().top; // Get the top position of the element relative to the viewport
+  var scrollStep = scrollToTop / 100; // Calculate how much to scroll on each step
+
+  // Scroll function
+  var scrollInterval = setInterval(function () {
+    if (window.pageYOffset < scrollToTop) {
+      window.scrollBy(0, scrollStep);
+    } else {
+      clearInterval(scrollInterval);
+    }
+  }, 10); // Scroll every 10 milliseconds for smoother animation
 }
 
 export default home;
